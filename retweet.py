@@ -27,7 +27,7 @@ api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
 #Sacar ID del último tweet y darle Like
 data = api.me()
 id_ultimo_tweet = data._json["status"]["id"]
-@print(id_ultimo_tweet)
+print(id_ultimo_tweet)
 
 #Dar Liker último tweet
 api.create_favorite(id_ultimo_tweet)
